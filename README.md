@@ -22,7 +22,6 @@ This project is intended for educational purposes and to assist in understading 
    ```bash
    sudo ./tcp_sniff
 4. **Test in Browser**: Open Firefox and enter http://www.example.com as an example.  
-   Make sure to use the HTTP protocol, as HTTPS is encrypted and will make it difficult to see the HTTP messages in the capture.
-   ![image](https://github.com/user-attachments/assets/7de8923f-87ac-491e-ab1b-ff6c13abd5da)  
+   Make sure to use the HTTP protocol, as HTTPS is encrypted and will make it difficult to see the HTTP messages in the capture.  
+   ![스크린샷 2025-04-06 033746](https://github.com/user-attachments/assets/e6fdaed9-9f2b-4807-8a15-0f2d1a0261f0)  
    *An example using HTTPS.*
-
