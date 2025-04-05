@@ -67,11 +67,12 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
             const u_char *payload = packet + total_headers_size;
 
             printf("========= New TCP Packet =========\n");
-            printf("Src MAC: "); print_mac(eth->ether_shost); printf("\n");
-            printf("Dst MAC: "); print_mac(eth->ether_dhost); printf("\n");
+            printf("Src MAC: "); print_mac(eth->ether_shost);
+            printf("Dst MAC: "); print_mac(eth->ether_dhost);
 
             printf("Src IP : %s\n", inet_ntoa(ip->iph_sourceip));
             printf("Dst IP : %s\n", inet_ntoa(ip->iph_destip));
+            
             printf("Src Port: %d\n", ntohs(tcp->tcp_sport));
             printf("Dst Port: %d\n", ntohs(tcp->tcp_dport));
 
@@ -83,11 +84,10 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
                     else
                         printf(".");
                 }
-                printf("\n");
             } else {
-                printf("No Payload.\n");
+                printf("No Payload.");
             }
-            printf("\n=================================\n");
+            printf("\n==================================\n");
         }
     }
 }
